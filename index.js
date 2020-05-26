@@ -1,14 +1,20 @@
 const restify = require('restify');
+const axios = require('axios');
+const { access_token } = require('./.properties');
+const urlBase = 'https://sandbox.clicksign.com/api/v1';
 
-function respond(req, res, next) {
-  res.send('hello ' + req.params.name);
-  next();
+let count = 0;
+
+const getAccountClickSign = async () => {
+    console.log(++count);
+    const resp = await axios.get(`${urlBase}/accounts?access_token=${access_token}`);
+    console.log(resp.data);
 }
 
-var server = restify.createServer();
-server.get('/hello/:name', respond);
-server.head('/hello/:name', respond);
+const server = restify.createServer();
+server.get('/', getAccountClickSign);
 
-server.listen(3000, function() {
+server.listen(3000, () => {
   console.log('%s listening at %s', server.name, server.url);
 });
+

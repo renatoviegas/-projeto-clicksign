@@ -4,6 +4,7 @@
   "description": "Project integration with ClickSign's API",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/renatoviegas/projeto-clicksign#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "restify": "^8.5.1"
   }
 }
