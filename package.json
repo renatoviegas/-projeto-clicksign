@@ -1,0 +1,26 @@
+{
+  "name": "projeto-clicksign",
+  "version": "1.0.0",
+  "description": "Project integration with ClickSign's API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatoviegas/projeto-clicksign.git"
+  },
+  "keywords": [
+    "esign",
+    "clicksign"
+  ],
+  "author": "Felipe Cipriani, Renato Viegas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renatoviegas/projeto-clicksign/issues"
+  },
+  "homepage": "https://github.com/renatoviegas/projeto-clicksign#readme",
+  "dependencies": {
+    "restify": "^8.5.1"
+  }
+}
