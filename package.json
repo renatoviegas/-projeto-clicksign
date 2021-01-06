@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/renatoviegas/projeto-clicksign#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "restify": "^8.5.1"
   }
 }
